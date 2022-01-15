@@ -3,11 +3,11 @@
 }
 
 .advertisement-list-block{
-    margin-top: 25px !important;
+    margin-top: 0px !important;
 }
 
 .single-ad-container{
-    height: 375px;
+    height: 408px;
     overflow-y: hidden;
  }
 
@@ -21,12 +21,11 @@
 
 .single-ad-img{
     width: 100%;
-    height: 168px;
-    border-radius: 5px 5px 0px 0px;
+    height: 250px;
 }
 
 .info-page-single-ad-img{
-    height: 320px !important;
+    height: 11.625rem !important;
 }
 
 .single-ad-inner-block{
@@ -52,8 +51,21 @@
 
 .single-ad-description{
     font-weight: 400;
-    font-size: 14px;
+    font-size: 17px;
     margin-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.single-ad-tags{
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: blue;
+}
+
+.likeCount{
+    color: blue;
+    font-weight: 500;
 }
 
 .info-page-single-ad-description{
@@ -62,10 +74,26 @@
 
 .fav-checkbox{
     position: absolute;
-    top: 10px;
+    bottom: 10px;
     right: 10px;
     background-color: white;
     border-radius: 50%;
+}
+
+.nameBlock{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.title{
+    color: #efefef;
+    font-weight: 400;
+}
+
+.productId{
+    color: white;
+    font-weight: 700;
 }
 
 .fav-img-wrapper{
@@ -76,4 +104,15 @@
     color: red;
     font-size: 50px;
     margin-top: 40px;
+}
+
+.single-profile-img{
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+}
+
+.authorName{
+    color: blue;
+    font-weight: 700;
 }

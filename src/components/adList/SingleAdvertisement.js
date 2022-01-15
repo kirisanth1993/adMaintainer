@@ -1,24 +1,29 @@
-import { Grid, Button, Box, Paper, Checkbox  } from '@material-ui/core';
+import { Grid, Button, Box, Paper, Checkbox, Typography  } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import './ListView.scss';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 
 const SingleAdvertisement = (props) => {
-    const {adDetail, checkboxChange, infoPage, itemClickAction} = props;
-    const [textCount, setTextCount] = useState(350);
-
-    useEffect(() => {
-        setTextCount(adDetail.isFav ? 200 : 350)
-    },[adDetail.isFav]);
+    const {adDetail, checkboxChange, infoPage} = props;
 
     return(
-        <Paper className={ (!infoPage && "single-ad-container ") + (!infoPage && adDetail.isFav && "small-single-ad-container") }>
+        <Paper className={"single-ad-container"}>
             <Grid className="fav-img-wrapper">
+                <Grid display="flex" container alignItems="center">
+                    <Grid item>
+                        <img 
+                            className={ "single-profile-img"} 
+                            src={ require( "../../assets/images/" + adDetail.authorImg).default }
+                        />
+                    </Grid>
+                    <Box item ml={2} className="authorName">
+                        <Typography>{adDetail.author}</Typography>
+                    </Box>
+                </Grid>
                 <img 
                     className={ "single-ad-img " + (infoPage && "info-page-single-ad-img")} 
                     src={ !adDetail.isNew ? require( "../../assets/images/" + adDetail.image).default : adDetail.image }
-                    onClick={ () => { !infoPage && itemClickAction(adDetail); } }
                 />
                 {
                     // fav icon
@@ -33,12 +38,21 @@ const SingleAdvertisement = (props) => {
                         />
                     </Grid>
                 }
+                <Grid className="nameBlock">
+                    <Grid class="title">{adDetail.title}</Grid>
+                    <Grid class="productId">{adDetail.productId}</Grid>
+                </Grid>
             </Grid>
-            <Grid className="single-ad-inner-block" onClick={ () => { !infoPage && itemClickAction(adDetail); } }>
-                <Grid className="single-ad-category">{adDetail.category}</Grid>
-                <Grid className={"single-ad-title " + (infoPage && "info-page-single-ad-title")}>{adDetail.title}</Grid>
-                <Grid className={ "single-ad-description "  + (infoPage && "info-page-single-ad-description")}>
-                    { ((adDetail.description.length <= textCount) || infoPage) ? adDetail.description : adDetail.description.slice(0, textCount) + " . . ." }
+            <Grid>
+                <Grid display="flex" container alignItems='center'>
+                    <Box mr={2}><FavoriteIcon/></Box>
+                    <Grid className="likeCount">{adDetail.likeCount} Likes</Grid>
+                </Grid>
+                <Grid className="single-ad-description">{ adDetail.description }</Grid>
+                <Grid className="single-ad-tags">
+                    {
+                        adDetail.tags.join(", ")
+                    }
                 </Grid>
             </Grid>
         </Paper>

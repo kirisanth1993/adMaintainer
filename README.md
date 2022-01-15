@@ -1,5 +1,5 @@
 1. get the source code from 
-https://github.com/kirisanth1993/adMaster.git
+https://github.com/kirisanth1993/adMaintainer.git
 
 2. then install node modules
 npm install
@@ -8,6 +8,6 @@ npm install
 npm start
 
 4. to see already deployed app
-https://kirisanth1993.github.io/adMaster/
+https://kirisanth1993.github.io/adMaintainer/
 
 

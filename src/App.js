@@ -9,7 +9,7 @@ function App() {
     <Provider store={store}>
       <Router>
         <Switch>
-          <Route path="/adMaster" component={Layout} />
+          <Route path="/adMaintainer" component={Layout} />
         </Switch>
       </Router>
     </Provider>

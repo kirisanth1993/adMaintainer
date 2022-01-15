@@ -50,43 +50,17 @@ const ListView = (props) => {
 
     return(
         <Grid>
-            {/* category selection and new btn */}
-            <Grid container>
-                <Grid item xs={2}>
-                    <DropDown
-                        id="Category"
-                        label="Category"
-                        selectedCategory={ selectedCategory }
-                        categorySelectionAction={ (e) => { categorySelectionAction(e); } }
-                        options={ categoryOptions }
-                    />
-                </Grid>
-                <Grid item xs={10} container justifyContent={"flex-end"}>
-                    <Box display="flex" justifyContent="flex-end">
-                        <Button 
-                            variant="contained" 
-                            color="primary" 
-                            className="new-btn"
-                            onClick={ () => props.newBtnAction() }
-                            >
-                            New Classified
-                        </Button>
-                    </Box>
-                </Grid>
-            </Grid>
-
             {/* list view */}
             <Grid container className="advertisement-list-block" spacing={3} display="flex" justifyContent="space-between">
                 {
                     displayAdvertisementList &&
                     displayAdvertisementList.map((SingleAdvertisementData, SingleAdvertisementDataIndex) => {
                         return(
-                            <Grid item className="singleBlock" key={ SingleAdvertisementDataIndex }>
+                            <Grid item xs={12} md={4} key={ SingleAdvertisementDataIndex }>
                                 {/*  single component for each ads */}
                                 <SingleAdvertisement 
                                     adDetail={ SingleAdvertisementData }
                                     checkboxChange={ (value, item) => favChangeAction(value, item) }
-                                    itemClickAction={ (ad) => { props.adClickAction(ad) } }
                                 />
                             </Grid>
                         );
