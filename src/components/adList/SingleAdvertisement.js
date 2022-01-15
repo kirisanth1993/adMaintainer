@@ -44,15 +44,17 @@ const SingleAdvertisement = (props) => {
                 </Grid>
             </Grid>
             <Grid>
-                <Grid display="flex" container alignItems='center'>
+                <Grid display="flex" container alignItems='center' className='likeBlock'>
                     <Box mr={2}><FavoriteIcon/></Box>
                     <Grid className="likeCount">{adDetail.likeCount} Likes</Grid>
                 </Grid>
-                <Grid className="single-ad-description">{ adDetail.description }</Grid>
                 <Grid className="single-ad-tags">
                     {
                         adDetail.tags.join(", ")
                     }
+                </Grid>
+                <Grid className="single-ad-comments">
+                    View { adDetail.commentCount } Comments
                 </Grid>
             </Grid>
         </Paper>

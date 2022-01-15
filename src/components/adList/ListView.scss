@@ -4,11 +4,13 @@
 
 .advertisement-list-block{
     margin-top: 0px !important;
+    min-height: 40rem;
 }
 
 .single-ad-container{
     height: 408px;
     overflow-y: hidden;
+    overflow-x: hidden;
  }
 
  .small-single-ad-container{
@@ -61,6 +63,11 @@
     font-size: 15px;
     margin-bottom: 10px;
     color: blue;
+    margin-left: 10px;
+}
+
+.likeBlock{
+    margin-left: 10px;
 }
 
 .likeCount{
@@ -110,9 +117,16 @@
     border-radius: 50%;
     height: 3rem;
     width: 3rem;
+    margin-left: 1rem;
 }
 
 .authorName{
     color: blue;
     font-weight: 700;
+}
+
+.single-ad-comments {
+    cursor: pointer;
+    margin-left: 10px;
+    color: #736969;
 }
