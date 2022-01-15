@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/adMaintainer/static/css/main.73ecb1f2.chunk.css",
+    "main.js": "/adMaintainer/static/js/main.26482fe4.chunk.js",
+    "main.js.map": "/adMaintainer/static/js/main.26482fe4.chunk.js.map",
+    "runtime-main.js": "/adMaintainer/static/js/runtime-main.44f7acf1.js",
+    "runtime-main.js.map": "/adMaintainer/static/js/runtime-main.44f7acf1.js.map",
+    "static/js/2.879ea3ba.chunk.js": "/adMaintainer/static/js/2.879ea3ba.chunk.js",
+    "static/js/2.879ea3ba.chunk.js.map": "/adMaintainer/static/js/2.879ea3ba.chunk.js.map",
+    "static/js/3.ced85780.chunk.js": "/adMaintainer/static/js/3.ced85780.chunk.js",
+    "static/js/3.ced85780.chunk.js.map": "/adMaintainer/static/js/3.ced85780.chunk.js.map",
+    "index.html": "/adMaintainer/index.html",
+    "static/css/main.73ecb1f2.chunk.css.map": "/adMaintainer/static/css/main.73ecb1f2.chunk.css.map",
+    "static/js/2.879ea3ba.chunk.js.LICENSE.txt": "/adMaintainer/static/js/2.879ea3ba.chunk.js.LICENSE.txt",
+    "static/media/class.jpg": "/adMaintainer/static/media/class.a9ce6719.jpg",
+    "static/media/friends.png": "/adMaintainer/static/media/friends.67f0f134.png",
+    "static/media/house.jpg": "/adMaintainer/static/media/house.05c2d865.jpg",
+    "static/media/house.png": "/adMaintainer/static/media/house.e4ff5b14.png",
+    "static/media/man.png": "/adMaintainer/static/media/man.b739f321.png",
+    "static/media/money.jpg": "/adMaintainer/static/media/money.1a755b11.jpg",
+    "static/media/money.png": "/adMaintainer/static/media/money.95da3d6e.png",
+    "static/media/nextHouse.png": "/adMaintainer/static/media/nextHouse.a149dc9a.png",
+    "static/media/party.jpg": "/adMaintainer/static/media/party.a117fc77.jpg",
+    "static/media/profile1.jpeg": "/adMaintainer/static/media/profile1.0847a8d5.jpeg",
+    "static/media/profile2.jpg": "/adMaintainer/static/media/profile2.a6fc5b9e.jpg",
+    "static/media/profile3.jpg": "/adMaintainer/static/media/profile3.d34c4bea.jpg",
+    "static/media/profile3.jpeg": "/adMaintainer/static/media/profile3.ee138068.jpeg",
+    "static/media/profile4.jpeg": "/adMaintainer/static/media/profile4.32fa90ee.jpeg",
+    "static/media/profile5.jpg": "/adMaintainer/static/media/profile5.6c3916f6.jpg",
+    "static/media/profile6.jpg": "/adMaintainer/static/media/profile6.c5a9ccef.jpg",
+    "static/media/study.png": "/adMaintainer/static/media/study.3313e277.png",
+    "static/media/villa.jpg": "/adMaintainer/static/media/villa.e55b2dfc.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.44f7acf1.js",
+    "static/js/2.879ea3ba.chunk.js",
+    "static/css/main.73ecb1f2.chunk.css",
+    "static/js/main.26482fe4.chunk.js"
+  ]
+}
